@@ -381,7 +381,7 @@ const Home = (props: any) => {
             </p>
           </div>
           <div className='grid grid-cols-1 lg:grid-cols-3 gap-6 mb-12 mx-auto w-5/6 md:w-3/5 lg:w-5/6'>
-            <div className='w-full mb-6 dark:shadow-2xl'>
+            <div className=' p-4 rounded-lg w-full mb-6 shadow-3xl dark:shadow-slate-700'>
               <Link href='https://json-schema.org/slack'>
                 <h3 className='mb-4 font-semibold flex items-center dark:text-slate-200'>
                   Join the JSON Schema Slack Workspace!
@@ -397,7 +397,7 @@ const Home = (props: any) => {
                   projects, and connect with +5000 practitioners and experts.
                 </p>
               </Link>
-              <button className='w-full lg:w-1/2 rounded border-2 bg-primary text-white h-[40px] flex items-center justify-center dark:border-none '>
+              <button className='w-full lg:w-1/2 rounded border-2 bg-primary text-white h-[40px] flex items-center justify-center dark:border-none mx-auto'>
                 <a
                   href='https://json-schema.org/slack'
                   className='flex items-center '
@@ -411,7 +411,7 @@ const Home = (props: any) => {
               </button>
             </div>
             {/* BlogPost Data */}
-            <div className='w-full mb-6 dark:shadow-2xl'>
+            <div className='p-4 rounded-lg w-full mb-6 shadow-3xl dark:shadow-slate-700'>
               <Link href={`/blog/posts/${blogPosts[0].slug}`}>
                 <h3 className='mb-5 font-semibold pt-1 dark:text-slate-200'>
                   The JSON Schema Blog
@@ -456,14 +456,14 @@ const Home = (props: any) => {
               <div>
                 <Link
                   href={`/blog/posts/${blogPosts[0].slug}`}
-                  className=' w-full lg:w-1/2 rounded border-2 bg-primary text-white  h-[40px] text-center semi-bold flex items-center justify-center dark:border-none '
+                  className=' w-full lg:w-1/2 rounded border-2 bg-primary text-white  h-[40px] text-center semi-bold flex items-center justify-center dark:border-none mx-auto'
                 >
                   Read more{' '}
                 </Link>
               </div>
             </div>
             <div>
-              <div className='md:w-full mb-6 mr-4 dark:shadow-2xl'>
+              <div className='md:w-full p-4 rounded-lg mb-6 mr-4 shadow-3xl dark:shadow-slate-700'>
                 <h3 className='mb-2 font-semibold dark:text-slate-200'>
                   JSON Schema Community Meetings & Events
                 </h3>
@@ -474,12 +474,12 @@ const Home = (props: any) => {
                   are every Monday at 14:00 PT.
                 </p>
                 <div className=''>
-                  <button className='max-w-[300px] w-full text-center rounded border-2 bg-primary text-white  h-[40px] mb-4 flex items-center justify-center dark:border-none '>
+                  <button className='max-w-[300px] w-full text-center rounded border-2 bg-primary text-white  h-[40px] mb-4 flex items-center justify-center dark:border-none mx-auto'>
                     <a href='https://github.com/orgs/json-schema-org/discussions/35'>
                       Open Community Working Meetings
                     </a>
                   </button>
-                  <button className='max-w-[200px] w-full text-center rounded border-2 bg-primary text-white  h-[40px] flex items-center justify-center dark:border-none '>
+                  <button className='max-w-[200px] w-full text-center rounded border-2 bg-primary text-white  h-[40px] flex items-center justify-center dark:border-none mx-auto'>
                     <a href='https://github.com/orgs/json-schema-org/discussions/34/'>
                       Office Hours
                     </a>
@@ -512,7 +512,7 @@ const Home = (props: any) => {
 
                 <a
                   href='https://calendar.google.com/calendar/u/0/embed?src=c_8r4g9r3etmrmt83fm2gljbatos@group.calendar.google.com'
-                  className='w-full lg:w-1/2 rounded border-2 bg-primary text-white  h-[40px] text-center flex items-center justify-center dark:border-none'
+                  className='w-full lg:w-1/2 rounded border-2 bg-primary text-white  h-[40px] text-center flex items-center justify-center dark:border-none mx-auto'
                   target='_blank'
                   rel='noopener noreferrer'
                 >
