@@ -381,7 +381,7 @@ const Home = (props: any) => {
             </p>
           </div>
           <div className='grid grid-cols-1 lg:grid-cols-3 gap-6 mb-12 mx-auto w-5/6 md:w-3/5 lg:w-5/6'>
-            <div className=' p-4 rounded-lg w-full mb-6 shadow-3xl dark:shadow-slate-700'>
+            <div className=' p-4 rounded-lg  w-full mb-6 shadow-3xl dark:shadow-slate-700'>
               <Link href='https://json-schema.org/slack'>
                 <h3 className='mb-4 font-semibold flex items-center dark:text-slate-200'>
                   Join the JSON Schema Slack Workspace!
@@ -393,6 +393,11 @@ const Home = (props: any) => {
                 />
                 {/* <h3 className='mb-4 font-semibold' >Event</h3> */}
                 <p className='mb-4 dark:text-slate-300'>
+                  We welcome everyone to join our Slack workspace. If you have a
+                  question on how to use JSON Schema, want to contribute, or
+                  simply want to say hello 👋.
+                  <br />
+                  <br />
                   Join our Slack to ask questions, get feedback on your
                   projects, and connect with +5000 practitioners and experts.
                 </p>
@@ -411,7 +416,7 @@ const Home = (props: any) => {
               </button>
             </div>
             {/* BlogPost Data */}
-            <div className='p-4 rounded-lg w-full mb-6 shadow-3xl dark:shadow-slate-700'>
+            <div className='p-4 rounded-lg  w-full mb-6 shadow-3xl dark:shadow-slate-700'>
               <Link href={`/blog/posts/${blogPosts[0].slug}`}>
                 <h3 className='mb-5 font-semibold pt-1 dark:text-slate-200'>
                   The JSON Schema Blog
@@ -462,7 +467,7 @@ const Home = (props: any) => {
                 </Link>
               </div>
             </div>
-            <div>
+            <div className=''>
               <div className='md:w-full p-4 rounded-lg mb-6 mr-4 shadow-3xl dark:shadow-slate-700'>
                 <h3 className='mb-2 font-semibold dark:text-slate-200'>
                   JSON Schema Community Meetings & Events
@@ -490,7 +495,7 @@ const Home = (props: any) => {
                 <div>
                   <Headline4>Upcoming events</Headline4>
                   <div>
-                    <ul>
+                    <ul className='h-28 overflow-y-auto'>
                       {props.datesInfo.map((event: any, index: any) => (
                         <li key={index}>
                           <div className='flex mb-4'>
