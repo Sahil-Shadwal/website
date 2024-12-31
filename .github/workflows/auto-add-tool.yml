@@ -1,0 +1,34 @@
+name: Auto Add Tool to JSON Schema
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  add-tool:
+    if: contains(github.event.issue.title, 'Tool Name') # Trigger only for tool addition issues
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Parse issue and update tooling data
+      run: npm run parse-issue "${{ github.event.issue.body }}"
+
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v5
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        commit-message: "Add new tool: ${{ github.event.issue.title }}"
+        title: "Add new tool: ${{ github.event.issue.title }}"
+        body: "This PR adds a new tool as requested in issue #${{ github.event.issue.number }}"
+        branch: "add-new-tool-${{ github.event.issue.number }}"

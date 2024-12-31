@@ -1,0 +1,12 @@
+Tool Name: Test Tool
+Tool Description: This is a test tool for validation.
+Tooling Types: validator, util-testing
+Languages: JavaScript
+Maintainers: testuser
+License: MIT
+Source Repository URL: https://github.com/testuser/test-tool
+Homepage URL: https://github.com/testuser/test-tool
+Supported Dialects: 4, 6, 7
+Dependencies on Validators: https://github.com/ajv-validator/ajv
+Tooling Listing Notes: This is a test tool.
+Landscape Information: https://example.com/logo.png
