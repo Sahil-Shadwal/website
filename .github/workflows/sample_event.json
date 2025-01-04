@@ -1,0 +1,7 @@
+{
+    "issue": {
+      "title": "Tool Name: Test Tool",
+      "body": "Tool Name: Test Tool\nTool Description: This is a test tool for validation.\nTooling Types: validator, util-testing\nLanguages: JavaScript\nMaintainers: testuser\nLicense: MIT\nSource Repository URL: https://github.com/testuser/test-tool\nHomepage URL: https://github.com/testuser/test-tool\nSupported Dialects: 4, 6, 7\nDependencies on Validators: https://github.com/ajv-validator/ajv\nTooling Listing Notes: This is a test tool.\nLandscape Information: https://example.com/logo.png",
+      "number": 1
+    }
+  }
